@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epis.Web.Portal", "Epis.Web.Portal\Epis.Web.Portal.csproj", "{EC1400E0-4852-45C0-8BEE-EEA3153FDF7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC1400E0-4852-45C0-8BEE-EEA3153FDF7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1400E0-4852-45C0-8BEE-EEA3153FDF7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1400E0-4852-45C0-8BEE-EEA3153FDF7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1400E0-4852-45C0-8BEE-EEA3153FDF7A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91E267DE-5A8E-4D0A-B80B-C489FFAA2C68}
+	EndGlobalSection
+EndGlobal
