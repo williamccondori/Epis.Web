@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Epis.Web.Portal.Models;
 using System.Web.Mvc;
 
 namespace Epis.Web.Portal.Controllers
 {
     public class NosotrosController : Controller
     {
+        public NosotrosController()
+        {
+        }
+
         public ActionResult Index()
         {
             return View();
@@ -15,7 +16,9 @@ namespace Epis.Web.Portal.Controllers
 
         public ActionResult PalabrasDirector()
         {
-            return View();
+            PalabrasDirectorModel modelo = new PalabrasDirectorModel();
+
+            return View(modelo);
         }
 
         public ActionResult MisionVision()
@@ -45,7 +48,9 @@ namespace Epis.Web.Portal.Controllers
 
         public ActionResult Acreditacion()
         {
-            return View();
+            AcreditacionModel modelo = new AcreditacionModel();
+
+            return View(modelo);
         }
     }
 }

@@ -1,37 +1,15 @@
-﻿
+﻿@using Epis.Web.Portal.Models
 @{
-    ViewBag.Title = "Palabras del director";
+    ViewBag.Title = @Model.TituloPagina;
 }
 
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <h2>Bienvenidos!</h2>
+            <img src="@Model.PabalabrasDirector.UrlImagen" alt="@Model.PabalabrasDirector.UrlImagen" />
+            <h2>@Model.PabalabrasDirector.Titulo</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue quam a tellus sollicitudin gravida.
-                Nam at nibh quam. Nam consequat quam ipsum, ac vulputate orci rhoncus quis. Suspendisse potenti. Cras
-                non placerat nulla. Phasellus pulvinar turpis arcu, vitae varius nibh ultricies at. Pellentesque at gravida
-                ex. Vivamus sit amet sapien a mauris elementum mollis. Etiam consequat sit amet ligula nec facilisis.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam, quam semper laoreet scelerisque,
-                nisi purus auctor dolor, at auctor dolor nulla pretium ipsum. Morbi porta, tellus id tincidunt condimentum,
-                odio metus efficitur turpis, ac mollis nulla libero ut elit. Duis fringilla pellentesque tincidunt. Nunc
-                ut vulputate risus. Vivamus urna diam, ornare id volutpat in, tristique non tellus. Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Suspendisse congue quam a tellus sollicitudin gravida. Nam at
-                nibh quam. Nam consequat quam ipsum, ac vulputate orci rhoncus quis. Suspendisse potenti. Cras non placerat
-                nulla. Phasellus pulvinar turpis arcu, vitae varius nibh ultricies at. Pellentesque at gravida ex. Vivamus
-                sit amet sapien a mauris elementum mollis. Etiam consequat sit amet ligula nec facilisis. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Nunc aliquam, quam semper laoreet scelerisque, nisi purus
-                auctor dolor, at auctor dolor nulla pretium ipsum. Morbi porta, tellus id tincidunt condimentum, odio
-                metus efficitur turpis, ac mollis nulla libero ut elit. Duis fringilla pellentesque tincidunt. Nunc ut
-                vulputate risus. Vivamus urna diam, ornare id volutpat in, tristique non tellus. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit. Suspendisse congue quam a tellus sollicitudin gravida. Nam at nibh
-                quam. Nam consequat quam ipsum, ac vulputate orci rhoncus quis. Suspendisse potenti. Cras non placerat
-                nulla. Phasellus pulvinar turpis arcu, vitae varius nibh ultricies at. Pellentesque at gravida ex. Vivamus
-                sit amet sapien a mauris elementum mollis. Etiam consequat sit amet ligula nec facilisis. Lorem ipsum
-                dolor sit amet, consectetur adipiscing elit. Nunc aliquam, quam semper laoreet scelerisque, nisi purus
-                auctor dolor, at auctor dolor nulla pretium ipsum. Morbi porta, tellus id tincidunt condimentum, odio
-                metus efficitur turpis, ac mollis nulla libero ut elit. Duis fringilla pellentesque tincidunt. Nunc ut
-                vulputate risus. Vivamus urna diam, ornare id volutpat in, tristique non tellus.
+                @Model.PabalabrasDirector.Resena
             </p>
         </div>
     </div>

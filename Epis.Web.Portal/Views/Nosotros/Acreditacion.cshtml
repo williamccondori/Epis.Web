@@ -1,6 +1,6 @@
-﻿
+﻿@using Epis.Web.Portal.Models
 @{
-    ViewBag.Title = "Acreditación";
+    ViewBag.Title = @Model.TituloPagina;
 }
 
 <div class="container">
@@ -18,68 +18,14 @@
         <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
             <div class="tab-content">
                 <div id="acreditacion" class="tab-pane fade in active">
-                    <h2>Acreditación</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue quam a tellus sollicitudin
-                        gravida. Nam at nibh quam. Nam consequat quam ipsum, ac vulputate orci rhoncus quis. Suspendisse
-                        potenti. Cras non placerat nulla. Phasellus pulvinar turpis arcu, vitae varius nibh ultricies
-                        at. Pellentesque at gravida ex. Vivamus sit amet sapien a mauris elementum mollis. Etiam consequat
-                        sit amet ligula nec facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                        aliquam, quam semper laoreet scelerisque, nisi purus auctor dolor, at auctor dolor nulla pretium
-                        ipsum. Morbi porta, tellus id tincidunt condimentum, odio metus efficitur turpis, ac mollis nulla
-                        libero ut elit. Duis fringilla pellentesque tincidunt. Nunc ut vulputate risus. Vivamus urna
-                        diam, ornare id volutpat in, tristique non tellus. Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Suspendisse congue quam a tellus sollicitudin gravida. Nam at nibh quam. Nam consequat
-                        quam ipsum, ac vulputate orci rhoncus quis. Suspendisse potenti. Cras non placerat nulla. Phasellus
-                        pulvinar turpis arcu, vitae varius nibh ultricies at. Pellentesque at gravida ex. Vivamus sit
-                        amet sapien a mauris elementum mollis. Etiam consequat sit amet ligula nec facilisis. Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Nunc aliquam, quam semper laoreet scelerisque, nisi
-                        purus auctor dolor, at auctor dolor nulla pretium ipsum. Morbi porta, tellus id tincidunt condimentum,
-                        odio metus efficitur turpis, ac mollis nulla libero ut elit. Duis fringilla pellentesque tincidunt.
-                        Nunc ut vulputate risus. Vivamus urna diam, ornare id volutpat in, tristique non tellus. Lorem
-                        ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue quam a tellus sollicitudin
-                        gravida. Nam at nibh quam. Nam consequat quam ipsum, ac vulputate orci rhoncus quis. Suspendisse
-                        potenti. Cras non placerat nulla. Phasellus pulvinar turpis arcu, vitae varius nibh ultricies
-                        at. Pellentesque at gravida ex. Vivamus sit amet sapien a mauris elementum mollis. Etiam consequat
-                        sit amet ligula nec facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                        aliquam, quam semper laoreet scelerisque, nisi purus auctor dolor, at auctor dolor nulla pretium
-                        ipsum. Morbi porta, tellus id tincidunt condimentum, odio metus efficitur turpis, ac mollis nulla
-                        libero ut elit. Duis fringilla pellentesque tincidunt. Nunc ut vulputate risus. Vivamus urna
-                        diam, ornare id volutpat in, tristique non tellus.
-                    </p>
-                    <img src="https://placeimg.com/1000/500/any" class="img-responsive" alt="Image" width="100%">
+                    <h2>@Model.Acreditacion.Titulo</h2>
+                    <p>@Model.Acreditacion.Resena</p>
+                    <img src="@Model.Acreditacion.UrlImagen" class="img-responsive" alt="@Model.Acreditacion.UrlImagen" width="100%">
                 </div>
                 <div id="autoevaluacion" class="tab-pane fade">
-                    <h2>Autoevaluación</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue quam a tellus sollicitudin
-                        gravida. Nam at nibh quam. Nam consequat quam ipsum, ac vulputate orci rhoncus quis. Suspendisse
-                        potenti. Cras non placerat nulla. Phasellus pulvinar turpis arcu, vitae varius nibh ultricies
-                        at. Pellentesque at gravida ex. Vivamus sit amet sapien a mauris elementum mollis. Etiam consequat
-                        sit amet ligula nec facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                        aliquam, quam semper laoreet scelerisque, nisi purus auctor dolor, at auctor dolor nulla pretium
-                        ipsum. Morbi porta, tellus id tincidunt condimentum, odio metus efficitur turpis, ac mollis nulla
-                        libero ut elit. Duis fringilla pellentesque tincidunt. Nunc ut vulputate risus. Vivamus urna
-                        diam, ornare id volutpat in, tristique non tellus. Lorem ipsum dolor sit amet, consectetur adipiscing
-                        elit. Suspendisse congue quam a tellus sollicitudin gravida. Nam at nibh quam. Nam consequat
-                        quam ipsum, ac vulputate orci rhoncus quis. Suspendisse potenti. Cras non placerat nulla. Phasellus
-                        pulvinar turpis arcu, vitae varius nibh ultricies at. Pellentesque at gravida ex. Vivamus sit
-                        amet sapien a mauris elementum mollis. Etiam consequat sit amet ligula nec facilisis. Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Nunc aliquam, quam semper laoreet scelerisque, nisi
-                        purus auctor dolor, at auctor dolor nulla pretium ipsum. Morbi porta, tellus id tincidunt condimentum,
-                        odio metus efficitur turpis, ac mollis nulla libero ut elit. Duis fringilla pellentesque tincidunt.
-                        Nunc ut vulputate risus. Vivamus urna diam, ornare id volutpat in, tristique non tellus. Lorem
-                        ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse congue quam a tellus sollicitudin
-                        gravida. Nam at nibh quam. Nam consequat quam ipsum, ac vulputate orci rhoncus quis. Suspendisse
-                        potenti. Cras non placerat nulla. Phasellus pulvinar turpis arcu, vitae varius nibh ultricies
-                        at. Pellentesque at gravida ex. Vivamus sit amet sapien a mauris elementum mollis. Etiam consequat
-                        sit amet ligula nec facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                        aliquam, quam semper laoreet scelerisque, nisi purus auctor dolor, at auctor dolor nulla pretium
-                        ipsum. Morbi porta, tellus id tincidunt condimentum, odio metus efficitur turpis, ac mollis nulla
-                        libero ut elit. Duis fringilla pellentesque tincidunt. Nunc ut vulputate risus. Vivamus urna
-                        diam, ornare id volutpat in, tristique non tellus.
-                    </p>
-                    <img src="https://placeimg.com/1000/500/any" class="img-responsive" alt="Image" width="100%">
+                    <h2>@Model.Autoevaluacion.Titulo</h2>
+                    <p>@Model.Autoevaluacion.Resena</p>
+                    <img src="@Model.Autoevaluacion.UrlImagen" class="img-responsive" alt="@Model.Autoevaluacion.UrlImagen" width="100%">
                 </div>
             </div>
         </div>

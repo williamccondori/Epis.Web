@@ -127,6 +127,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\NosotrosModel.cs" />
+    <Compile Include="Models\PaginaModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -146,7 +148,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Epis.Web.Aplicacion.Dto\Epis.Web.Aplicacion.Dto.csproj">
+      <Project>{87CFEB4C-8E4C-4D6D-A8D6-38D8372BAEC7}</Project>
+      <Name>Epis.Web.Aplicacion.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Epis.Web.Aplicacion.Implementacion\Epis.Web.Aplicacion.Implementacion.csproj">
+      <Project>{C33C9D06-8450-4C93-BB90-3FF7FF0C92BD}</Project>
+      <Name>Epis.Web.Aplicacion.Implementacion</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Epis.Web.Aplicacion.Servicios\Epis.Web.Aplicacion.Servicios.csproj">
+      <Project>{10CAEF6B-BE85-4DB7-9A15-31C8E5A0EBE5}</Project>
+      <Name>Epis.Web.Aplicacion.Servicios</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
